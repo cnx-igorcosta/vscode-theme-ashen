@@ -1,8 +1,22 @@
 # Ashen
 
+![Ashen em Java](https://raw.githubusercontent.com/cnx-igorcosta/vscode-theme-ashen/main/media/preview-java.png)
+
 Tema quase-monocromático para VS Code. Fundo neutro frio, foreground bege dessaturado
 e desvios mínimos de matiz para separar keyword, tipo e string sem quebrar a sensação
 de uma única cor.
+
+## Instalação
+
+Pela paleta de extensões: `Ctrl+Shift+X`, buscar por **Ashen**.
+
+Ou pela linha de comando:
+
+```bash
+code --install-extension igorcosta.ashen
+```
+
+Depois, `Ctrl+K Ctrl+T` e selecione **Ashen**.
 
 ## Paleta base
 
