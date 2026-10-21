@@ -1,0 +1,42 @@
+{
+  "name": "ashen",
+  "displayName": "Ashen",
+  "description": "Tema quase-monocromático de baixo contraste cromático: fundo neutro frio, foreground bege e desvios sutis de matiz para keywords, tipos e strings.",
+  "version": "1.0.0",
+  "publisher": "igorcosta",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "monochrome",
+    "minimal",
+    "low-contrast"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ashen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ashen-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cnx-igorcosta/vscode-theme-ashen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cnx-igorcosta/vscode-theme-ashen/issues"
+  },
+  "homepage": "https://github.com/cnx-igorcosta/vscode-theme-ashen#readme",
+  "galleryBanner": {
+    "color": "#0F0E0F",
+    "theme": "dark"
+  }
+}

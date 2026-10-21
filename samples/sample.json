@@ -1,0 +1,20 @@
+{
+  "name": "front-conexa-backoffice-v2",
+  "version": "2.14.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "tsc -b && vite build",
+    "test": "vitest run --coverage"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "axios": "^1.7.2"
+  },
+  "engines": { "node": ">=20.0.0" },
+  "ativo": true,
+  "limite": 50,
+  "desfecho": null
+}

@@ -1,0 +1,33 @@
+# Pipeline de carga noturna
+version: "3.9"
+
+x-defaults: &defaults
+  restart: unless-stopped
+  logging:
+    driver: json-file
+    options: { max-size: "10m", max-file: "3" }
+
+services:
+  mongo:
+    <<: *defaults
+    image: mongo:6.0
+    ports: ["27017:27017"]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:?obrigatorio}
+    volumes:
+      - mongo-data:/data/db
+
+  rabbitmq:
+    <<: *defaults
+    image: rabbitmq:3.12-management
+    ports:
+      - "5672:5672"   # amqp
+      - "15672:15672" # painel
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "ping"]
+      interval: 30s
+      retries: 5
+
+volumes:
+  mongo-data: {}
